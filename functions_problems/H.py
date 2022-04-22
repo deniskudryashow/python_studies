@@ -13,5 +13,5 @@ def GCD(n,m):
 result_1 = int(n/GCD(n,m))
 result_2 = int(m/GCD(n,m))
 result = (result_1, result_2)
-print(result)
+print(result_1, result_2)
 

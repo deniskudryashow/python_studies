@@ -1,11 +1,11 @@
 def IsPointInSquare (x, y):
-    return (x**2) + (y**2)
+    return bool(abs(x) <= 1 and abs(y) <=1)
 
-x = int(input())
-y = int(input())
+x = float(input())
+y = float(input())
 
 result = IsPointInSquare(x,y)
-if result > 2:
-    print(False)
+if result == True:
+    print("YES")
 else:
-    print(True)
+    print("NO")

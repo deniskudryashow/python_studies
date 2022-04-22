@@ -7,7 +7,10 @@ while True:
     guess = set(map(int, guess.split()))
     answer = input()
     if answer == "YES":
-        numbers = numbers & guess
+        numbers &= guess
     else:
-        numbers = numbers - guess
-print(numbers)
+        numbers -= guess
+print(*sorted(list(numbers)))
+
+
+

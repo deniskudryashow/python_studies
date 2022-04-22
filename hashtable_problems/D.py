@@ -1,13 +1,10 @@
-from re import L
-
-
 L = list(map(int, input().split()))
-d = {}
+s = set()
 for i in range(len(L)):
-    if L[i] in d.values():
+    if L[i] in s:
         print("YES")
     else:
-        d[i] = L[i]
+        s.add(L[i])
         print("NO")
 
     

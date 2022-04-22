@@ -9,14 +9,14 @@ for _ in range(m):
 
 Cross = sorted(set(Anya_set & Borya_set))
 print(len(Cross))
-print(Cross)
+print(*Cross)
 
 Anya_unique = sorted(Anya_set.difference(Cross))
 print(len(Anya_unique))
-print(Anya_unique)
+print(*Anya_unique)
 
 Borya_unique = sorted(Borya_set.difference(Cross))
 print(len(Borya_unique))
-print(Borya_unique)
+print(*Borya_unique)
 
 

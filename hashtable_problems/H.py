@@ -6,11 +6,11 @@ while True:
     if guess == "HELP":
         break
     guess = set(map(int, guess.split()))
-    if len(guess&rest) > int(len(rest)/2):
+    if len(guess&rest) > int((len(rest)/2)):
         print("YES")
-        rest = rest & guess
+        rest &= guess
     else:
         print("NO")
-        rest = rest & (numbers - guess)
-print(sorted(rest))
+        rest -= guess
+print(*sorted(rest))
     
